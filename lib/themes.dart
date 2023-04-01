@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
 
-const COLOR_PRIMARY = Colors.deepOrangeAccent;
-const COLOR_ACCENT = Colors.orange;
+const color_primary = Colors.deepOrangeAccent;
+const color_accent = Colors.orange;
 
 ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
-    primaryColor: COLOR_PRIMARY,
+    primaryColor: color_primary,
     floatingActionButtonTheme:
-        const FloatingActionButtonThemeData(backgroundColor: COLOR_ACCENT),
+        const FloatingActionButtonThemeData(backgroundColor: color_accent),
     elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ButtonStyle(
-            padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
-                const EdgeInsets.symmetric(horizontal: 40.0, vertical: 20.0)),
-            shape: MaterialStateProperty.all<OutlinedBorder>(
-                RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0))),
-            backgroundColor: MaterialStateProperty.all<Color>(COLOR_ACCENT))),
+      style: ButtonStyle(
+        padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+            const EdgeInsets.symmetric(horizontal: 40.0, vertical: 20.0)),
+        shape: MaterialStateProperty.all<OutlinedBorder>(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0))),
+        backgroundColor: MaterialStateProperty.all<Color>(color_accent),
+      ),
+    ),
     inputDecorationTheme: InputDecorationTheme(
         border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(20.0),
