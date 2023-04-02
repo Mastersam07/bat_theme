@@ -19,8 +19,9 @@ jobs:
       - name: Analyze project
         run: flutter analyze
       - name: Run tests
-        run: flutter test --coverage --dart-define=CI=true
-      - name: Collect and report coverage
-        uses: coverallsapp/github-action@v1.1.2
+        run: flutter test --coverage
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./coverage/lcov.info
+          token: ${{ secrets.CODECOV_TOKEN }}
