@@ -1,16 +1,38 @@
-# kaunta
+# 🦇🦇 BatTheme
 
-A new Flutter project.
+<p align="center">
+  <a href="" target="_blank">
+    <img src="./ss/batman.gif" alt="Bat Theme" width="200">
+  </a>
+</p>
 
-## Getting Started
+[![Test workflow](https://github.com/mastersam07/bat_theme/actions/workflows/tests.yml/badge.svg)](https://github.com/mastersam07/bat_theme/actions/workflows/tests.yml)
+[![Coverage Status](https://coveralls.io/repos/github/mastersam07/bat_theme/badge.svg?branch=master)](https://coveralls.io/github/mastersam07/bat_theme?branch=master)
 
-This project is a starting point for a Flutter application.
+A repo showcasing how to work with theme extensions in flutter. This repo serves as a code guide to the writeup <a href="https://github.com/mastersam07">Dressing your flutter widget with theme extension</a> and also the talk <a href="https://github.com/mastersam07">Dressing your flutter widget with theme extension</a>
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+[Link to Mockup](https://www.ls.graphics/free/simple-iphone-x-mockups)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[![Twitter Follow](https://img.shields.io/twitter/follow/mastersam_.svg?style=social)](https://twitter.com/mastersam_)
+
+Star⭐ the repo if you like what you see😉.
+
+## Quick Start 🚀
+
+## Feature Set ✨
+
+* [ ] TODO
+## RoadMap ✨
+* [ ] TODO
+
+### PDF TOOLS
+* [ ] TODO
+
+## 📸 ScreenShots
+
+| Image| Image|
+|------|-------|
+
+## 🤓 Author(s)
+**Samuel Abada** [![Twitter Follow](https://img.shields.io/twitter/follow/mastersam_.svg?style=social)](https://twitter.com/mastersam_)
