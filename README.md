@@ -22,12 +22,11 @@ Star⭐ the repo if you like what you see😉.
 
 ## Feature Set ✨
 
-* [ ] TODO
+* [x] Custom Colors
 ## RoadMap ✨
-* [ ] TODO
-
-### PDF TOOLS
-* [ ] TODO
+* [ ] Custom Sizes
+* [ ] Custom Spacing
+* [ ] Custom Textstyles
 
 ## 📸 ScreenShots
 

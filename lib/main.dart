@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kaunta/themes.dart';
-
-import 'extensions/colors.dart';
 import 'theme_manager.dart';
 
 void main() {
@@ -42,12 +40,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: lightTheme.copyWith(extensions: <ThemeExtension<dynamic>>[
-        AppColors.light,
-      ]),
-      darkTheme: darkTheme.copyWith(extensions: <ThemeExtension<dynamic>>[
-        AppColors.dark,
-      ]),
+      theme: lightTheme,
+      darkTheme: darkTheme,
       themeMode: _themeManager.themeMode,
       home: const MyHomePage(),
     );
@@ -116,9 +110,8 @@ class DetailTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final myColors = Theme.of(context).extension<AppColors>()!;
     return Container(
-      color: myColors.success,
+      color: const Color(0xFF28A745),
       child: Row(
         children: [
           const FlutterLogo(size: 40),
