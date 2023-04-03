@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:kaunta/extensions/custom_textstyles.dart';
 import 'package:kaunta/themes.dart';
+import 'extensions/custom_colors.dart';
 import 'theme_manager.dart';
 
 void main() {
@@ -40,7 +42,16 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: lightTheme,
+      theme: lightTheme.copyWith(extensions: <ThemeExtension<dynamic>>[
+        const AppStyles(
+            body: TextStyle(
+          fontFamily: 'Marianne',
+          fontSize: 17.0,
+          fontWeight: FontWeight.normal,
+          decoration: TextDecoration.none,
+        )),
+        const AppColors(),
+      ]),
       darkTheme: darkTheme,
       themeMode: _themeManager.themeMode,
       home: const MyHomePage(),
