@@ -2,16 +2,28 @@ import 'package:flutter/material.dart';
 
 @immutable
 class AppStyles extends ThemeExtension<AppStyles> {
+  // ADD MORE TEXTSTYLES AS NEEDED
+  final TextStyle? body;
+
+  const AppStyles({
+    required this.body,
+  });
+
   @override
   ThemeExtension<AppStyles> copyWith() {
-    // TODO: implement copyWith
-    throw UnimplementedError();
+    return AppStyles(
+      body: body,
+    );
   }
 
   @override
   ThemeExtension<AppStyles> lerp(
       covariant ThemeExtension<AppStyles>? other, double t) {
-    // TODO: implement lerp
-    throw UnimplementedError();
+    if (other is! AppStyles) {
+      return this;
+    }
+    return AppStyles(
+      body: TextStyle.lerp(body, other.body, t)!,
+    );
   }
 }

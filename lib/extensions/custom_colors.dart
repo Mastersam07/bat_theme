@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 @immutable
 class AppColors extends ThemeExtension<AppColors> {
+  // ADD MORE COLORS AS NEEDED
   const AppColors({
-    required this.color1,
+    this.color1,
   });
 
   final Color? color1;
